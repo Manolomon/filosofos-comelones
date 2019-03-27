@@ -27,6 +27,4 @@ COPY . /usr/src/app
 
 WORKDIR /usr/src/app
 
-RUN javac Mesa.java
-
-RUN java Mesa
+RUN sh runner.sh
