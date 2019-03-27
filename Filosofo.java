@@ -14,7 +14,7 @@ class Filosofo implements Runnable {
 
     public void run() {
         while (true) {
-            System.out.println("Filosofo " + idFilosofo + " reportándose");
+            System.out.println(idFilosofo + " con ganas de comer");
                 if (this.tenedorInstruccion == 1) {
                     synchronized (tenedorDerecho) {
                         tomarTenedor("derecho");
@@ -56,7 +56,7 @@ class Filosofo implements Runnable {
 
     public void pensar() {
         try {
-            System.out.println("Filósofo " + idFilosofo + " está pensando");
+            System.out.println(idFilosofo + " está pensando");
             int pausa = (int) (Math.random() * 3000);
             Thread.sleep(pausa);
         } catch (InterruptedException inEx) {
@@ -67,7 +67,7 @@ class Filosofo implements Runnable {
 
     public void tomarTenedor(String tenedor) {
         try {
-            System.out.println("Filósofo " + idFilosofo + " toma su tenedor " + tenedor);
+            System.out.println(idFilosofo + " toma su tenedor " + tenedor);
             int pausa = (int) (Math.random() * 3000);
             Thread.sleep(pausa);
         } catch (InterruptedException inEx) {
@@ -78,10 +78,10 @@ class Filosofo implements Runnable {
 
     public void comer() {
         try{    
-            System.out.println("Filósofo " + idFilosofo + " está comiendo");
+            System.out.println(idFilosofo + " está comiendo");
             int pausa = (int) (Math.random() * 3000);
             Thread.sleep(pausa);
-            System.out.println("Filósofo " + idFilosofo + " deja de comer");
+            System.out.println(idFilosofo + " deja de comer");
         } catch (InterruptedException inEx) {
             // En caso de ser necesario
             System.out.println(inEx.toString());

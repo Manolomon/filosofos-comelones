@@ -11,11 +11,11 @@ public class Mesa {
 
     public static void main(String[] args) {
         // Crear los objetos
-        Filosofo f1 = new Filosofo("1 -- Platón", tenedor1, tenedor2, 1);
-        Filosofo f2 = new Filosofo("2 -- Descartes", tenedor2, tenedor3, 1);
-        Filosofo f3 = new Filosofo("3 -- Rousseau", tenedor3, tenedor4, 1);
-        Filosofo f4 = new Filosofo("4 -- Bertrand Russell", tenedor4, tenedor5, 1);
-        Filosofo f5 = new Filosofo("5 -- Nietzsche", tenedor5, tenedor1, 2);
+        Filosofo f1 = new Filosofo("\033[31m1 -- Platón", tenedor1, tenedor2, 1);
+        Filosofo f2 = new Filosofo("\033[32m2 -- Descartes", tenedor2, tenedor3, 1);
+        Filosofo f3 = new Filosofo("\033[33m3 -- Rousseau", tenedor3, tenedor4, 1);
+        Filosofo f4 = new Filosofo("\033[34m4 -- Bertrand Russell", tenedor4, tenedor5, 1);
+        Filosofo f5 = new Filosofo("\033[35m5 -- Nietzsche", tenedor5, tenedor1, 2);
         // Crear los objetos Thread
         Thread hilo1 = new Thread(f1);
         Thread hilo2 = new Thread(f2);
