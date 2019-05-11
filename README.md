@@ -1,5 +1,7 @@
 # Filósofos Comelones
 
+[![Docker-Badge](https://img.shields.io/docker/cloud/build/manolomon/filosofos-comelones.svg?logo=docker&logoColor=white&style=for-the-badge)](https://hub.docker.com/r/manolomon/filosofos-comelones)
+
 - En una mesa redonda se sienta 5 filósofos, al centro de la mesa hay un tazón mágico de espagueti (que nunca se termina).
 - Lo único que hacen los filósofos es comer y pensar (np pueden hacer las dos cosas al mismo tiempo)
 - Para poder comer, cada filósofo necesita de dos tenedores: un tenedor izquierdo y uno derecho. En total hay 5 tenedores.
